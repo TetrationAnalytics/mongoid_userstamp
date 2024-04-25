@@ -7,11 +7,7 @@ require 'active_support/all'
 require 'mongoid'
 require 'mongoid_userstamp'
 
-Mongoid.configure do |config|
-  config.connect_to(
-    'mongoid_userstamp_test'
-  )
-end
+Mongoid.load!("#{File.dirname(__FILE__)}/mongoid.yml", :test)
 
 begin
   Object.send :remove_const, :Config

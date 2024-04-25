@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ['lib']
 
-  s.post_install_message = File.read('UPGRADING') if File.exists?('UPGRADING')
+  s.post_install_message = File.read('UPGRADING') if File.exist?('UPGRADING')
 
-  s.add_dependency 'mongoid', ['>= 6.0.0', '< 8.0']
+  s.add_dependency 'mongoid', ['>= 6.0.0', '< 9.0']
   s.add_runtime_dependency 'request_store'
 
   s.add_development_dependency 'rake'

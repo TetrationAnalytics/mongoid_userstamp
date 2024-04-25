@@ -1,0 +1,11 @@
+test:
+  clients:
+    default:
+      database: mongoid_nested_set_test
+      hosts:
+        - localhost:27018
+      options:
+        user: 'admin'
+        password: 'rs123456'
+        auth_source: admin
+
